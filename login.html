@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" and dir="Itr">
+    <head>
+        <meta charset="utf-8">
+        <title>Interactive Login Format</title>
+        <link rel="stylesheet" href="css/loginStyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+
+
+    </head>
+    <header>
+        <h1 class="logo">
+            Apuntes
+        </h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <body>
+
+        <form class="box" action="inc/login.php" method="POST" enctype="multipart/form-data">
+            <h1>
+                Iniciar Sesión
+            </h1>
+            <input type="text" name="ci" placeholder="ci" id="ci" required>
+
+            <input type="password" name="password" placeholder="Contraseña" id="password" required>
+
+            
+            <input type="submit" name="login" value="Iniciar" onclick="login()">
+        </form>
+    </body>
+</html>
