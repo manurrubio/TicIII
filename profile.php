@@ -32,6 +32,7 @@
                                     <a href="">Support</a>
                                     <a href="">Setting</a>
                                     <a href="">Signout</a>
+                                    <a href="createApunte.html">Crear Apunte</a>
                                 </div>
                             </div>
                         </div>
@@ -76,7 +77,7 @@
                                             $print= "Ingeniería Civil - ".$row['facultad'];
                                             echo $print;
                                         }else if($row['carrera']=="ing_inf"){
-                                            $print= "Ingeniería Telemática - ".$row['facultad'];
+                                            $print= "Ingeniería Informatica - ".$row['facultad'];
                                             echo $print;
                                         }
                                                                
