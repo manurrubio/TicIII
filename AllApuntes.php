@@ -37,26 +37,33 @@
                                     <div class="col-md text-secondary">
                                     <?php 
                                         $archivo= $row['archivo'];
-                                        $ruta = "inc/". $archivo ;
+                                        echo $archivo;
+                                        $ruta = "/inc". $archivo ;
                                     ?>
                             
-
+                                    
+                                    
+                                    <a href="<?php echo $ruta ?>">Abrir apunte</a>
+                                    <div>
+                                    <?php
                                     $file_parts = pathinfo($ruta);
 
                                     switch($file_parts['extension'])
                                     {
                                         case "pdf":
-                                        $logo= "inc/logos/pdfLogo.png";
+                                        $logo= "inc\logos\pdfLogo.png";
 
                                         case "docx":
-                                        $logo= "inc/logos/wordLogo.png";
+                                        $logo= "inc\logos\wordLogo.png";
 
                                         default:
-                                        $logo= "inc/logos/fileLogo.png";
+                                        $logo= "inc\logos\fileLogo.png";
                                     }
-                                    <a href="<?php echo $ruta ?>">Abrir apunte</a>
-                                    </div>
+                                    ?>
+                                    <img src="$logo" >
 
+                                    </div>
+                                    
                                     </div> 
                                     </p>                           
                                     <?php
