@@ -44,7 +44,7 @@ if(isset($_POST['save'])){
     //defino un identificador para hacer funcionar las cosas
 
         $stmt = $conn->prepare($INSERT);
-        $stmt ->bind_param("ssiss",$ci_estudiante,$nombre,$materia,$ruta,$descripcion);
+        $stmt ->bind_param("issss",$ci_estudiante,$nombre,$materia,$ruta,$descripcion);
         $stmt ->execute();
         //guardo mi archivo subido en la carpeta archivo
         $subirarchivo = move_uploaded_file($_FILES["archivo"]["tmp_name"], $ruta);
