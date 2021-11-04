@@ -100,27 +100,35 @@
                         <div class="card mb-mb content">
                             <h1 class="m-3">Mis apuntes</h1>
                             <div class ="card-body">
-                                <div class="row">
-                                <?php 
+                            <?php 
                             $user= $_SESSION['user'];
                             $query = "SELECT * from apuntes where ci_estudiante = $user";
                             $result = mysqli_query($conn, $query);
                             if($result){
                                 while($row = mysqli_fetch_array($result)){
                                     ?>
+                                <div class="row">
                                     <div class="col-md-3">
                                         <h5><?php echo $row['nombre']?></h5>
                                     </div>
-                                    <div class="col-md-9 text-secondary">
+                                    <div class="col-md text-secondary">
                                     <?php echo $row['descripcion']?>
                                     </div>
+                                    <div class="col-md text-secondary">
+                                    <?php 
+                                $archivo= $row['archivo'];
+                                $ruta = "inc/". $archivo ;
+                                ?>
+                                        <a href="<?php echo $ruta ?>">Abrir apunte</a>
+                                    </div>
+
+                                    </div>                            
                                     <?php
                                 }
                             }
                             ?>
-                                    
-                                </div>
-                            </div>
+                            </div>   
+                            
                         </div>
                     </div>
                 </div>
