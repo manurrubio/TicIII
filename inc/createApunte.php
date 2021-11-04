@@ -33,21 +33,21 @@ if(isset($_POST['save'])){
 
     $ci_estudiante=$row['ci'];
     echo($ci_estudiante);
-    
+               
     //para verificar que tenga el dato suficiente/ que se haya guardado el archivo en la ruta indicada
     if(!empty($nombre) || !empty($materia) || !empty($descripcion) ||  !empty($descripcion) ||!empty($_FILES['apunte']) ){
 
             
             //tomo mi identificador --> ci   
 
-        $INSERT = "INSERT INTO apuntes (ci_estudiante,nombre,materia,archivo,descripcion)values(?,?,?,?,?,?,?,?,?)";
+        $INSERT = "INSERT INTO apuntes (ci_estudiante,nombre,materia,archivo,descripcion)values(?,?,?,?,?)";
     //defino un identificador para hacer funcionar las cosas
 
         $stmt = $conn->prepare($INSERT);
-        $stmt ->bind_param("issssssss",$ci_estudiante,$nombre,$materia,$ruta,$descripcion);
+        $stmt ->bind_param("ssiss",$ci_estudiante,$nombre,$materia,$ruta,$descripcion);
         $stmt ->execute();
         //guardo mi archivo subido en la carpeta archivo
-        $subirarchivo = move_uploaded_file($_FILES["f_perfil"]["tmp_name"], $ruta);
+        $subirarchivo = move_uploaded_file($_FILES["archivo"]["tmp_name"], $ruta);
         //inicio la sesión del usuario registrado y lo mando al perfil, en un principio no hay user
         echo "APUNTE GUARDADO";
         header("Location: ../index.html");
