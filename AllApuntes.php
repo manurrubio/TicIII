@@ -8,19 +8,23 @@
         <div class="card mb-mb content">
             <h1 class="m-3">Todos los apuntes</h1>
             <div class ="card-body">
-                <div class="column">
+                <div class="column" style="align-items:center"> 
                 <?php 
                             
                             $query = "SELECT * from apuntes ";
                             $result = mysqli_query($conn, $query);
                             if($result){
                                 while($row = mysqli_fetch_array($result)){
+                                    
                                 
                                     ?>
-                                    <p>
-                                    <div class="row">
+                                    <?php
+                                    echo "<br>";
+                                    ?> 
+                                    <div class="column">
                                     <div class="col-md-3">
                                         <h5><?php echo $row['nombre']?></h5>
+                                        <h5><?php echo $row['materia']?></h5>
                                     </div>
                                     <?php
                                         $ci_estudiante= $row['ci_estudiante'];
@@ -37,8 +41,8 @@
                                     <div class="col-md text-secondary">
                                     <?php 
                                         $archivo= $row['archivo'];
-                                        echo $archivo;
-                                        $ruta = "/inc". $archivo ;
+                                        
+                                        $ruta = "inc/". $archivo ;
                                     ?>
                             
                                     
@@ -46,26 +50,31 @@
                                     <a href="<?php echo $ruta ?>">Abrir apunte</a>
                                     <div>
                                     <?php
-                                    $file_parts = pathinfo($ruta);
 
-                                    switch($file_parts['extension'])
-                                    {
-                                        case "pdf":
-                                        $logo= "inc\logos\pdfLogo.png";
-
-                                        case "docx":
-                                        $logo= "inc\logos\wordLogo.png";
-
-                                        default:
-                                        $logo= "inc\logos\fileLogo.png";
+                                    $name = $ruta;
+                                    $parts = explode('.', $name);
+                                    $extension = array_pop($parts);
+                                    if( $extension == 'pdf'){
+                                        $logo= "inc/logos/pdfLogo.jpg";
                                     }
-                                    ?>
-                                    <img src="$logo" >
-
-                                    </div>
+                                    else if( $extension == 'docx'){
+                                        $logo= "inc/logos/wordLogo.jpg";
+                                    }
+                                    else{
+                                        $logo= "inc/logos/fileLogo.jpg";
+                                    }
                                     
+                                    ?>
+                                    
+                                    </div>
+                                    <div class=column>
+                                    <img src="<?php echo $logo?>"} >
+                                    </div>
                                     </div> 
-                                    </p>                           
+                                      
+                                    <?php
+                                    echo "<br>";
+                                    ?>                      
                                     <?php
                                     
                                 }
