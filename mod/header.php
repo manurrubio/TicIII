@@ -13,12 +13,12 @@
 <header>
         <a href="#" class="logo">Apuntes</a>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="./index.php">Home</a></li>
+            <li><a href="./AllApuntes.php">Apuntes</a></li>
+            <li><a href="./createApunte.html">Agregar apunte</a></li>
+            <li><a href="./profile.php">Mi Perfil</a></li>
+            <li><a href="./cerrarSesion.php">Cerrar Sesión</a></li>
+
         </ul>
     </header>
     <body>

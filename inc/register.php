@@ -50,7 +50,7 @@ if(isset($_POST['register'])){
                 $subirarchivo = move_uploaded_file($_FILES["f_perfil"]["tmp_name"], $ruta);
                 //inicio la sesión del usuario registrado y lo mando al perfil, en un principio no hay user
                 echo "REGISTRO COMPLETADO";
-                header("Location: ../index.html");
+                header("Location: ../index.php");
             }else{
                 echo "Ya alguien registrado con esa cédula de identidad";
             }

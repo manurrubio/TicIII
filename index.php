@@ -1,4 +1,4 @@
-
+<?php include("inc/db.php")?>
 <!DOCTYPE html>
 <html lang= "es">
     <head>
@@ -20,7 +20,19 @@
                  <a href="#galería">Galería</a>
                  <a href="#sobreNosotros">Sobre Nosotros</a>
                  <a href="#contacto">Contacto</a>
-                 <a href="login.html">Iniciar Sesión</a>
+                 <?php 
+                 if(!isset($_SESSION['user'])){
+                     ?>
+                     <a href="login.html">Iniciar Sesión</a>
+                     <?php 
+                 }else{
+                    ?>
+                    <a href="profile.php">Mi perfil</a>
+                    <a href="cerrarSesion.php">Cerrar Sesión</a>
+                    <?php
+                 }
+                 ?>
+                 
                  <a href="register.html">Registrarse</a>
              </nav>
             <div class="contenedor head">

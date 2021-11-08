@@ -27,12 +27,11 @@
                                 <img src="<?php echo $ruta ?>" class="rounded-circle" width="250"/>
                                 <div class="mt-3">
                                     <h3><?php echo $row['nombre']?> <?php echo $row['apellido']?></h3>
-                                    <a href="">Home</a>
-                                    <a href="">Work</a>
+                                    <a href="index.php">Inicio</a>
+                                    <a href="">Editar Perfil</a>
                                     <a href="">Support</a>
-                                    <a href="">Setting</a>
-                                    <a href="">Signout</a>
                                     <a href="createApunte.html">Crear Apunte</a>
+                                    <a href="cerrarSesion.php">Cerrar Sesión</a>
                                 </div>
                             </div>
                         </div>
