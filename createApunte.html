@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 
 
 <html lang="en" and dir="Itr">
@@ -12,10 +12,19 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
-    <body>
-        <h1>
-            Ingresar Apunte
+    <header>
+        <h1 class="logo">
+            Crear apunte
         </h1>
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="profile.php">Perfil</a></li>
+            <li><a href="#">"    "</a></li>
+        </ul>
+    </header>
+
+    <body>
+        
         <form class="box" action="inc/createApunte.php" method="POST" enctype="multipart/form-data">
             <input type="text" name="nombre" placeholder="nombre" id="name" required>
             <input type="text" name="materia" placeholder="materia" id="materia" required>

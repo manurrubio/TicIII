@@ -15,14 +15,14 @@ header{
     transition: 0.6s;
     padding: 40px 50px;
     z-index:100000;
-    background-color: #3E065F;
+    background-color: #ff8177;
     
 
 }
 header.sticky
 {
     padding: 5px 100px;
-    background:#3E065F;
+    background:#ff8177;
 }
 header .logo
 {
@@ -59,7 +59,7 @@ header ul li a{
 head.sticky .logo,
 
 header.sticky ul li a{
-    color: #ffffff;
+    color: #ff8177;
 
 }
 header.sticky .logo{
@@ -103,7 +103,7 @@ body{
     display: block;
     margin: 20px auto;
     text-align: center;
-    border: 3px solid #3E065F;
+    border: 3px solid #b12a5b;
     padding:14px 10px ;
     width: 220px;
     outline:none;
@@ -113,7 +113,7 @@ body{
 }
 .box input[type="text"]:focus,.box input[type="password"]:focus{
     width: 220px;
-    border-color: #8E05C2;
+    border-color: #b12a5b;
 }
 .box input[type="submit"]{
     border:0;
@@ -121,16 +121,16 @@ body{
     display: block;
     margin: 20px auto;
     text-align: center;
-    border: 3px solid #3E065F;
+    border: 3px solid #ff8177;
     padding: 14px 10px;
     outline: none;
-    color: #8E05C2;
+    color: #b12a5b;
     border-radius: 24px;
     transition: 0.25px;
     cursor: pointer;
 }
 .box input[type="submit"]:hover{
-    background: #3E065F;
+    background: #ff8177;
 }
 
 button{
@@ -139,16 +139,16 @@ button{
     display: block;
     margin: 20px auto;
     text-align: center;
-    border: 3px solid #3E065F;
+    border: 3px solid #ff8177;
     padding: 14px 10px;
     outline: none;
-    color: #8E05C2;
+    color: #b12a5b;
     border-radius: 24px;
     transition: 0.25px;
     cursor: pointer;
 }
 button:hover{
-    background: #3E065F;
+    background: #ff8177;
 }
 
 .select {
@@ -163,7 +163,7 @@ button:hover{
   }
 
   input[type="date"],input[type="file"]{
-      background-color: #8E05C2;
+      background-color: #b12a5b;
       margin: 20px auto;
       color: aliceblue;
       font-size: 18px;
@@ -173,7 +173,7 @@ button:hover{
 
   }
   select{
-    background-color: #8E05C2;
+    background-color: #b12a5b;
     margin: 20px auto;
     color: aliceblue;
     font-size: 18px;
@@ -187,7 +187,7 @@ button:hover{
     top: 10px;
     left: 8px;
     font-size: 10px;
-    color: #8E05C2;
+    color: #b12a5b;
   }
 
   
