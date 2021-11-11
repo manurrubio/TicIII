@@ -36,7 +36,7 @@
                  <a href="register.html">Registrarse</a>
              </nav>
             <div class="contenedor head">
-                <h1 class="titulo">Nombre de la página</h1>
+                <h1 class="titulo">Apointes</h1>
                 <p class="copy">¡Bienevido! Accede a tus apuntes y a los de tus amigos de manera fácil y simple</p>
             </div>
         </header>
@@ -48,19 +48,19 @@
                     <div class="checklist-servicio">
                         <div class="service">
                             <h3 class="n-service"><span class="number">1</span>Registrate</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nisi quas ex ipsa reprehenderit laudantium blanditiis optio minus quisquam doloribus?</p>
+                            <p>En la barra de tareas de la esquina suprior izquierda ve a la opción registrar para poder emprender tu camino con nosotros!</p>
                         </div>
                         <div class="service">
                             <h3 class="n-service"><span class="number">2</span>Subí tus apuntes</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nisi quas ex ipsa reprehenderit laudantium blanditiis optio minus quisquam doloribus?</p>
+                            <p>Compartí con tus compañeros todo el conocimiento que tengas y así recibirás lo mismo de su parte!</p>
                         </div>
                         <div class="service">
                             <h3 class="n-service"><span class="number">3</span>Estudiá</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nisi quas ex ipsa reprehenderit laudantium blanditiis optio minus quisquam doloribus?</p>
+                            <p>Ahora , con tantos apuntes, no vas a poder parar de estudiar!</p>
                         </div>
                         <div class="service">
                             <h3 class="n-service"><span class="number">4</span>¡Recibite!</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nisi quas ex ipsa reprehenderit laudantium blanditiis optio minus quisquam doloribus?</p>
+                            <p>No importa cuanto tiempo te lleve, la perseverancia y los apuntos son lo imortante!</p>
                         </div>
                     </div>
                 </div>
@@ -69,12 +69,12 @@
                 <div class="contenedor">
                     <h2 class="subtitulo">Galería</h2>
                     <div class="contenedor-galeria">
-                        <img src="img/asdf.png" alt="" class="img-galeria">
-                        <img src="img/Batman-Zoom-Featured.jpg" alt="" class="img-galeria">
-                        <img src="img/advtime.png" alt="" class="img-galeria">
-                        <img src="img/Imagen1.png" alt="" class="img-galeria">
-                        <img src="img/advtime.png" alt="" class="img-galeria">
-                        <img src="img/asdf.png" alt="" class="img-galeria">
+                        <img src="img/teacher.jpeg" alt="" class="img-galeria">
+                        <img src="img/university.jpg" alt="" class="img-galeria">
+                        <img src="img/patio.jpeg" alt="" class="img-galeria">
+                        <img src="img/yale.jpeg" alt="" class="img-galeria">
+                        <img src="img/gorros.jpeg" alt="" class="img-galeria">
+                        <img src="img/clase.jpeg" alt="" class="img-galeria">
                     </div>   
                 </div>
             </section>
@@ -108,10 +108,10 @@
                     <p>no sabemos sana</p>
                 </div>
                 <div class="social-media">
-                    <a href="./" class="social-media-icon">
+                    <a href="https://twitter.com/ApuntesTiciii" class="social-media-icon">
                         <i class='bx bxl-twitter' ></i>
                     </a>
-                    <a href="./" class="social-media-icon">
+                    <a href="https://www.instagram.com/apuntestic3/" class="social-media-icon">
                         <i class='bx bxl-instagram-alt' ></i>
                     </a>
                     <a href="./" class="social-media-icon">

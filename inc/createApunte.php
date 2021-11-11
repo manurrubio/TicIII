@@ -6,6 +6,10 @@ include("db.php");
 
 //verifico lo que me mandaron en el post
 if(isset($_POST['save'])){
+    if (!$_SESSION['user']){
+        header("Location: /TICIII/login.html");
+        exit;
+    }
     //guardo en variables lo que recibo por post
     $nombre = $_POST['nombre'];
     $materia = $_POST['materia'];
