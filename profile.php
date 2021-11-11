@@ -28,7 +28,7 @@
                                 <div class="mt-3">
                                     <h3><?php echo $row['nombre']?> <?php echo $row['apellido']?></h3>
                                     <a href="index.php">Inicio</a>
-                                    <a href="">Editar Perfil</a>
+                                    <a href="inc/editProfile.php">Editar Perfil</a>
                                     <a href="">Support</a>
                                     <a href="createApunte.html">Crear Apunte</a>
                                     <a href="cerrarSesion.php">Cerrar Sesión</a>
