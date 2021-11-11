@@ -79,3 +79,23 @@ header.sticky ul li a{
 header.sticky .logo{
     color: white;
 }
+ 
+div.column{
+   
+    width: 1000px;
+    border: 1px solid black;
+    border-radius: 15px;
+    overflow: hidden; 
+
+}
+div.image-logo{
+   
+    width: 300px;
+    float:left; /* add this */
+    
+    
+}
+div.other{
+    
+    overflow: hidden;
+}

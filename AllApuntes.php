@@ -32,13 +32,15 @@
                                         $resultUser = mysqli_query($conn, $query2);
                                         $rowUser = mysqli_fetch_array($resultUser);
                                     ?>
-                                    <div>
-                                    <h6><?php echo $rowUser['nombre']?></h6>
+                                    <div class="image-logo">
+                                    <h6>
+                                    <img src="<?php echo "inc/logos/arrow.jpg"?>"} >
+                                    <?php echo $rowUser['nombre']?></h6>
                                     </div>
-                                    <div class="col-md text-secondary">
+                                    <div class="other">
                                     <?php echo $row['descripcion']?>
                                     </div>
-                                    <div class="col-md text-secondary">
+                                    <div class="other">
                                     <?php 
                                         $archivo= $row['archivo'];
                                         
@@ -67,7 +69,7 @@
                                     ?>
                                     
                                     </div>
-                                    <div class=column>
+                                    <div class="image-logo">
                                     <img src="<?php echo $logo?>"} >
                                     </div>
                                     </div> 
