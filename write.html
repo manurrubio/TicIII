@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+
+<html lang="en" and dir="Itr">
+    <head>
+        <meta charset="utf-8">
+        <title>Interactive Login Format</title>
+        <!-- <link rel="stylesheet" href="css/resStyle.css"> -->
+        <link rel="stylesheet" href="css/loginStyle.css">
+        <script src="login2.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+    <header>
+        <h1 class="logo">
+            Crear apunte
+        </h1>
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="profile.php">Perfil</a></li>
+            <li><a href="#">"    "</a></li>
+        </ul>
+    </header>
+
+    <body>
+        
+        <form class="box" action="inc/write.php" method="POST" enctype="multipart/form-data">
+            <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
+            <input type="text" name="nombre" placeholder="nombre" id="name" required>
+            <input type="text" name="materia" placeholder="materia" id="materia" required>
+            <input type="text" name="descripcion" placeholder="descripcion" id="descripcion" required>
+           
+          
+            <textarea id="textarea" class="textarea" name="textarea" required></textarea>
+            <input  type="submit" name="save" value="save" onclick="login()">
+        </form>   
+        
+    </body>
+    </html>
+
+    <style type="text/css">
+        textarea{
+            font-size: small;
+            height: 400px;
+            width: 1000px;
+        }
+        .box{
+        width: 1250px;
+        padding: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: rgba(255, 255, 255, 0.4);
+        text-align: center;
+        border-radius: 60pt;
+    
+        }
+    </style>

@@ -11,7 +11,7 @@
 
 
 <header>
-        <a href="#" class="logo">Apuntes</a>
+        <a href="index.php" class="logo">Apuntes</a>
         <ul>
             <li><a href="./index.php">Home</a></li>
             <li><a href="./AllApuntes.php">Apuntes</a></li>

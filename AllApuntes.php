@@ -123,14 +123,17 @@
     div.card-body{
         background-image: none;
         background-color: transparent;
+        border-color: transparent;
     }
     div.card{
         background-color: transparent;
+        
     }
     body{
     background-image: url(./img/apunteback.jpg) ;
     background-size: cover;
     background-attachment: fixed;
+    border-color: transparent;
     
     }
 
