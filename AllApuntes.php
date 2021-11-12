@@ -130,7 +130,7 @@
         
     }
     body{
-    background-image: url(./img/apunteback.jpg) ;
+    background-image: url(./img/apunteback.jpg)  ;
     background-size: cover;
     background-attachment: fixed;
     border-color: transparent;
