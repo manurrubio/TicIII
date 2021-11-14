@@ -24,6 +24,7 @@
                  if(!isset($_SESSION['user'])){
                      ?>
                      <a href="login.html">Iniciar Sesión</a>
+                     <a href="register.html">Registrarse</a>
                      <?php 
                  }else{
                     ?>
@@ -33,7 +34,6 @@
                  }
                  ?>
                  
-                 <a href="register.html">Registrarse</a>
              </nav>
             <div class="contenedor head">
                 <h1 class="titulo">Apointes</h1>

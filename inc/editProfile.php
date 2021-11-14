@@ -34,9 +34,11 @@ if(isset($_SESSION['user'])){
             }
 
             mysqli_query($conn, $query);
-
+            header("Location: ../profile.php");
             
         }else{
+            echo "Contraseña incorrecta";
+            header("Location: ../index.php");
         }
 
     }
@@ -71,7 +73,7 @@ if(isset($_SESSION['user'])){
             
 
     <body>
-        <form class="box" action="editProfile.php?ci=<?php echo $_GET['ci'];?>" method="POST" enctype="multipart/form-data">
+        <form class="box" action="editProfile.php?ci=<?php echo $_SESSION['user'];?>" method="POST" enctype="multipart/form-data">
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <h1>
                 Editar perfil

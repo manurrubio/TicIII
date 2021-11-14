@@ -33,9 +33,7 @@ header.sticky
 }
 header .logo
 {
-    position: relative;
-    
-    
+    position: fixed;    
     font-weight: 700;
     color:#b12a5b;
     text-decoration: none;
@@ -59,7 +57,7 @@ header ul li{
     color:rgb(41, 38, 38);
 }
 header ul li a{
-    position: relative;
+    position:relative;
     margin: 0 15px;
     text-decoration: none;
     color:rgb(41, 38, 38);
@@ -95,7 +93,7 @@ header.sticky ul li a{
 
 }
 header.sticky .logo{
-    color: #ff8177;
+    color: #b12a5b;
 }
  
 div.column{
