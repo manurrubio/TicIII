@@ -6,7 +6,6 @@
        <br><br><br><br><br><br>
         <div class="container">
             <div class="main">
-
                 <div class="row">
                             <!--selecciono el usuario de $_SESSION-->
                             <?php 
@@ -14,6 +13,7 @@
                             $query = "SELECT * from usuarios where ci = $user limit 1";
                             $result = mysqli_query($conn, $query);
                             $row = mysqli_fetch_array($result);
+                            $c_amig=$row['carrera'];
                             ?>
                     <div class="col-md-4 mt-1">
                         <div class="card text-center sidebar">
@@ -129,8 +129,63 @@
                             </div>   
                             
                         </div>
+
+                        <div class="card mb-mb content">
+                            <h1 class="m-3">Mis amigos</h1>
+                            <div class ="card-body">
+                            <?php 
+                            $user= $_SESSION['user'];
+                            $query = "SELECT * from usuarios where ci!= $user";
+                            $result = mysqli_query($conn, $query);
+                            if($result){
+                                while($row = mysqli_fetch_array($result)){
+                                    ?>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                    <?php 
+                                        $foto= $row['foto_perfil'];
+                                        $ruta = "inc/". $foto ;
+                                    ?>
+                                         <img src="<?php echo $ruta ?>" class="rounded-circle friend-pic" width="100"/>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5><?php echo $row['nombre']?> <?php echo $row['apellido']?></h5>
+                                    </div>
+                                    <div class="col-md text-secondary">
+                                        ver perfil
+                                    </div>
+                                    <div class="col-md text-secondary">
+                                        ver apuntes
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">    </div>
+                                </div>   <div class="row">
+                                    <div class="col-md-3">    </div>
+                                </div><div class="row">
+                                    <div class="col-md-3">    </div>
+                                </div><div class="row">
+                                    <div class="col-md-3">    </div>
+                                </div><div class="row">
+                                    <div class="col-md-3">    </div>
+                                </div><div class="row">
+                                    <div class="col-md-3">    </div>
+                                </div><div class="row">
+                                    <div class="col-md-3">    </div>
+                                </div><div class="row">
+                                    <div class="col-md-3">    </div>
+                                </div>                     
+                                    <?php
+                                }
+                            }
+                            ?>
+                            </div>   
+                            
+                        </div>
                     </div>
                 </div>
+            </div>
     </section>
     <script type="text/javascript">
     window.addEventListener("scroll",function(){
