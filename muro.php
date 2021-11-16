@@ -7,7 +7,9 @@
     <body>
         <div class="card mb-mb content">
             <h1 class="m-3" style="text-align:center;">Muro</h1>
-            
+            <br><br><br><br>
+            <h2 style="margin: auto; color: coral;">¡Coméntale a un amigo <a href="createComentario.php" style="text-decoration: none; color: blanchedalmond;"> aquí!</a></li></h2> 
+
         
             <div class ="card-body" style="align-self: center;">
                 <div class="card-body" style="align-items:center"> 

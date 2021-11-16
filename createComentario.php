@@ -27,20 +27,26 @@
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <br><br><br><br><br><br><br>
         
-        <form class="box" action="inc/createComentario.php" method="POST" enctype="multipart/form-data">
+        <form class="box" action="inc/comentario.php" method="POST" enctype="multipart/form-data">
             <input type="text" name="comentario" placeholder="Comentario" id="comentario" required>
             <input type="submit" name="enviar" value="Enviar" onclick="login()">
+            <a href=""><?php echo $_SESSION['user']?></a>
             <select name="amigo" required>
                 <option selected hidden value="">Amigo</option>
+                
                 <?php 
-                    $user=$_SESSION['usuario'];
+                    $user=$_SESSION['user'];                    
                     $query1 = "SELECT * from usuarios where ci = $user limit 1";
                     $result1 = mysqli_query($conn, $query1);
                     $row1 = mysqli_fetch_array($result1);
+                    $ci=$row1['ci'];
+                    ?><option value ="user"><?php $ci?></option> <?php
                     $carrera= $row1['carrera']; 
+                    ?><option value =""><?php echo $user?></option><?php
                     $query = "SELECT * from usuarios where carrera= '$carrera' and ci!='$user'";
                     $result = mysqli_query($conn, $query);
                     if($result){
+                        
                         while($row = mysqli_fetch_array($result)){
                             ?><option value =""><?php echo $row['ci']?></option><?php
                         }

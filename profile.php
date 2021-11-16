@@ -9,6 +9,7 @@
                 <div class="row">
                             <!--selecciono el usuario de $_SESSION-->
                             <?php 
+                            $_SESSION['comentario']=$_SESSION['user'];
                             $user= $_SESSION['user'];
                             $query = "SELECT * from usuarios where ci = $user limit 1";
                             $result = mysqli_query($conn, $query);

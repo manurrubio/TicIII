@@ -17,6 +17,8 @@
             <li><a href="./AllApuntes.php">Apuntes</a></li>
             <li><a href="./createApunte.html">Agregar apunte</a></li>
             <li><a href="./profile.php">Mi Perfil</a></li>
+            <li><a href="./muro.php">Muro</a></li>
+            
             <li><a href="./cerrarSesion.php">Cerrar Sesión</a></li>
 
         </ul>
