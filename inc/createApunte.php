@@ -54,7 +54,7 @@ if(isset($_POST['save'])){
         $subirarchivo = move_uploaded_file($_FILES["archivo"]["tmp_name"], $ruta);
         //inicio la sesión del usuario registrado y lo mando al perfil, en un principio no hay user
         echo "APUNTE GUARDADO";
-        header("Location: ../index.php");
+        header("Location: ../profile.php");
 
         $stmt->close();
         

@@ -1,3 +1,4 @@
+<?php include("inc/db.php")?>
 <!DOCTYPE html>
 
 
@@ -29,8 +30,7 @@
         
         <form class="box" action="inc/comentario.php" method="POST" enctype="multipart/form-data">
             <input type="text" name="comentario" placeholder="Comentario" id="comentario" required>
-            <input type="submit" name="enviar" value="Enviar" onclick="login()">
-            <a href=""><?php echo $_SESSION['user']?></a>
+            
             <select name="amigo" required>
                 <option selected hidden value="">Amigo</option>
                 
@@ -42,18 +42,20 @@
                     $ci=$row1['ci'];
                     ?><option value ="user"><?php $ci?></option> <?php
                     $carrera= $row1['carrera']; 
-                    ?><option value =""><?php echo $user?></option><?php
+                    
                     $query = "SELECT * from usuarios where carrera= '$carrera' and ci!='$user'";
                     $result = mysqli_query($conn, $query);
                     if($result){
                         
                         while($row = mysqli_fetch_array($result)){
-                            ?><option value =""><?php echo $row['ci']?></option><?php
+
+                            ?><option value = "<?php echo $row['ci']?>"><?php echo $row['ci']?></option><?php
                         }
                     }
                 ?>
             </select> 
-            <input type="text" name="comentario" placeholder="asdf" id="comentario" required>
+            <input type="submit" name="enviar" value="Enviar" onclick="createComentario()">
+        
             
         </form>   
         

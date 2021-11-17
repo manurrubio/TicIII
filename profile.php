@@ -115,6 +115,9 @@
                                     <?php echo $row['descripcion']?>
                                     </div>
                                     <div class="col-md text-secondary">
+                                    <?php echo $row['materia']?>
+                                    </div>
+                                    <div class="col-md text-secondary">
                                     <?php 
                                 $archivo= $row['archivo'];
                                 $ruta = "inc/". $archivo ;
