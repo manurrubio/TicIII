@@ -6,24 +6,11 @@
    
     <body>
         <div class="card mb-mb content">
-            <h1 class="m-3" style="text-align:center;">Todos los apuntes</h1>
+            <h1 class="m-3" style="text-align:center;">Todos los archivos</h1>
 
-            <form style="text-align:center;" method="get" action="AllApuntes.php">
-                <label>
-                    Buscar
-                    <input type="text"name="keywords" autocomplete="off">
-                </label>
-                <select name="field">
-                    <option value="nombre">nombre</option>
-                    <option value="materia">materia</option>
-                    <option value="ci_estudiante">ci_estudiante</option>
-                    <option value="descripcion">descripcion</option>
-                </select>
-
-                <input type="submit" value="Buscar"><br>
-            </form>
             
             
+                
 
 
             <div class ="card-body" style="align-self: center;">

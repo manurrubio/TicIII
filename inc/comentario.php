@@ -20,6 +20,7 @@ if(isset($_POST['enviar'])){
         $INSERT = "INSERT INTO muro (ci_muro,ci_comentario,comentario)values(?,?,?)";
     //defino un identificador para hacer funcionar las cosas
         //$stmt ->close();
+
         $stmt = $conn->prepare($INSERT);
         $stmt ->bind_param("iis",$amigo,$user,$comentario);
         $stmt ->execute();

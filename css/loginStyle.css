@@ -15,14 +15,14 @@ header{
     transition: 0.6s;
     padding: 40px 50px;
     z-index:100000;
-    background-color: #ff8177;
+    background-color: #79ffafda;
     
 
 }
 header.sticky
 {
     padding: 5px 100px;
-    background:#ff8177;
+    background:#79ffafda;
 }
 header .logo
 {
@@ -59,7 +59,7 @@ header ul li a{
 head.sticky .logo,
 
 header.sticky ul li a{
-    color: #ff8177;
+    color: #79ffafda;
 
 }
 header.sticky .logo{
@@ -71,7 +71,7 @@ body{
     margin:0;
     padding:0;
     font-family: sans-serif;
-    background: url(../img/apuntes2.jpeg) ;
+
     background-size: cover;
     background-attachment: fixed;
     
@@ -102,7 +102,7 @@ body{
     display: block;
     margin: 20px auto;
     text-align: center;
-    border: 3px solid #b12a5b;
+    border: 3px solid #40865cda;
     padding:14px 10px ;
     width: 220px;
     outline:none;
@@ -112,7 +112,7 @@ body{
 }
 .box input[type="text"]:focus,.box input[type="password"]:focus{
     width: 220px;
-    border-color: #b12a5b;
+    border-color: #40865cda;
 }
 .box input[type="submit"]{
     border:0;
@@ -120,16 +120,16 @@ body{
     display: block;
     margin: 20px auto;
     text-align: center;
-    border: 3px solid #ff8177;
+    border: 3px solid #79ffafda;
     padding: 14px 10px;
     outline: none;
-    color: #b12a5b;
+    color: #40865cda;
     border-radius: 24px;
     transition: 0.25px;
     cursor: pointer;
 }
 .box input[type="submit"]:hover{
-    background: #ff8177;
+    background: #79ffafda;
 }
 
 button{
@@ -138,16 +138,16 @@ button{
     display: block;
     margin: 20px auto;
     text-align: center;
-    border: 3px solid #ff8177;
+    border: 3px solid #79ffafda;
     padding: 14px 10px;
     outline: none;
-    color: #b12a5b;
+    color: #4a9869da;
     border-radius: 24px;
     transition: 0.25px;
     cursor: pointer;
 }
 button:hover{
-    background: #ff8177;
+    background: #79ffafda;
 }
 
 .select {
@@ -162,7 +162,7 @@ button:hover{
   }
 
   input[type="date"],input[type="file"]{
-      background-color: #b12a5b;
+      background-color: #4a9869da;
       margin: 20px auto;
       color: aliceblue;
       font-size: 18px;
@@ -172,7 +172,7 @@ button:hover{
 
   }
   select{
-    background-color: #b12a5b;
+    background-color: #4a9869da;
     margin: 20px auto;
     color: aliceblue;
     font-size: 18px;
@@ -186,7 +186,7 @@ button:hover{
     top: 10px;
     left: 8px;
     font-size: 10px;
-    color: #b12a5b;
+    color: #4a9869da;
   }
 
   
